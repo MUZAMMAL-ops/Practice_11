@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="H">k</h1>
+    <h1 id="i">j</h1>
+    <h1 class="M">Hello world</h1>
+    <h2 class="M">Hello world</h2>
+    <input id='set_placeholder' type="text">
+    <h1 id="date"></h1>
+    <div id="mcd">
+        Dummy Content
+        <h1>Multiple Child Div</h1>
+        <h1>Child 2</h1>
+        <h1>Child 3</h1>
+      </div>
+
+    
+</body>
+<script>
+    //const new_1 = document.getElementById('H').innerHTML="Hello world";
+    //const new_2 = document.getElementById('H').innerText="Hello"
+    const new_3 = document.getElementsByTagName('h1');
+    console.log(new_3)
+    //console.log(new_1)
+    const new_4 = document.getElementsByClassName('M')
+    //console.log(new_4)
+    new_4[1].innerHTML = "ok"
+    new_4[1].className=`${new_4[1].className} boldblue`
+    new_4[1].classList = [`boldblue`]
+   
+    const new_5 = document.getElementById('set_placeholder')
+    new_5.setAttribute('placeholder' ,'Enter Here')
+    //css
+
+    new_5.style.color = 'red';
+    new_5.style.fontSize = '20px'
+    new_5.style.border = '  1px solid black';
+    new_5.style.outline = 'none';
+
+    const displayDate = () => {
+        document.getElementById('date').innerHTML = new Date();
+    }
+
+    const newElement = document.createElement('h1')
+    const newElement1 = document.createElement('h1')
+    const newElement2 = document.createElement('h1')
+    console.log(newElement)
+    newElement.innerHTML = 'Pakistan'
+    console.log(newElement)
+    document.body.appendChild(newElement)
+
+    const mcd = mcd.getElementById(mcd)
+    mcd.removeChild(mcd.firstElementChild)
+    mcd.removeChild(mcd.children[1])
+    document.body.removeChild(mcd)
+
+    
+
+
+
+
+
+ 
+
+
+</script>
+</html>
